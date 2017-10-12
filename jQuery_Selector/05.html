@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/Class.js" ></script>
+		<link href="css/bootstrap.css"  rel="stylesheet" />
+		<link href="css/index.css"  rel="stylesheet" />
+		 <style type="text/css">  
+        input:focus {  
+            background-color: #FF6;  
+        }
+        input:  
+    </style>  
+		<style>
+			
+			div,span,p{
+				width: 140px;
+				height: 140px;
+				margin: 5px;
+				background: #aaa;
+				border: #000 1px solid;
+				float: left;
+				font-size: 17px;
+				font-family: verdana; 
+			}
+			div.mini{
+				width: 55px;
+				height: 55px;
+				background-color: #aaa;
+				font-size: 12px;
+			}
+			div.hide{
+				display: none;
+			}
+			
+		</style>
+		
+		
+		<script>
+			$(function(){
+				
+				
+				
+			});
+			
+		</script>
+		
+	</head>
+	<body>
+		<h1 class="text-center"> jQuery选择器</h1>
+		<h2 class="page-header"> jQuery之基本选择器</h2>
+	
+	    
+	    <div class="one" id="one">
+	    	id为one,class为one的div
+	    	<div class="mini">class为mini</div>
+	    	
+	    </div>
+	    
+	     <div class="one" id="two" title="test">
+	    	id为two,class为one,title为test的div
+	    	<div class="mini" title="other">class为mini,title为other</div>
+	    	<div class="mini" title="test">class为mini,title为test</div>
+	    </div>
+	    
+	     <div class="one">
+	    	<div class="mini" >class为mini</div>
+	    	<div class="mini" >class为mini</div>
+	    	<div class="mini" >class为mini</div>
+	    	<div class="mini" ></div>
+	    </div>
+	    
+	     <div class="one">
+	    	<div class="mini" >class为mini</div>
+	    	<div class="mini" >class为mini</div>
+	    	<div class="mini" >class为mini</div>
+	    	<div class="mini" title="test">class为mini,title为test</div>
+	    	
+	    </div>
+	   
+	    <div class="none" style="display: none;">
+	    	style的display为"none"的div
+	    	
+	    </div> 
+	    <div  class="hide" >
+	    	class为"hide"的div
+	    	
+	    </div>
+	        <div >
+	    	
+	    </div>
+		  <span id="mover">正在执行动画的span元素。</span>
+		  
+		  <br /><br />
+		  <br /><br /><br /><br /><br />
+		  <h3 class="page-header">基本选择器</h3>
+		  <label><big>1,改变id为one的元素的背景色</big></label><br />
+		  <label><big>2,改变class为mini的所有元素的背景色</big></label><br />
+		  <label><big>3,改变元素名为div的所有元素的背景色</big></label><br />
+		  <label><big>4,改变所有元素的背景色</big></label><br />
+		  <label><big>5,改变所有的span元素和id为two的元素的背景色</big></label><br />
+		  
+		  
+		  
+		  <h3 class="page-header">层次选择器</h3>
+		  <label><big>1,改变body内所有div的背景色</big></label><br />
+		  <label><big>2,改变body内子div元素的背景色</big></label><br />
+		  <label><big>3,改变class为one的下一个div同辈元素背景色</big></label><br />
+		  <label><big>4,改变id为two的元素后面的所有div同辈元素的背景色</big></label><br />
+		  
+		  
+		  
+		   <h3 class="page-header">过滤选择器</h3>
+		   <h4>基本过滤选择器</h4>
+		  <label><big>1,改变第一个div元素的背景色</big></label><br />
+		  <label><big>2,改变最后一个div元素的背景色</big></label><br />
+		  <label><big>3,改变class不为one的div元素的背景色</big></label><br />
+		  <label><big>4,改变索引值为偶数的div元素的背景色</big></label><br /> 
+		  <label><big>5,改变索引值为奇数的div元素的背景色</big></label><br />
+		  <label><big>6,改变索引值等于3的div元素的背景色</big></label><br />
+		  <label><big>7,改变索引值大于3的div元素的背景色</big></label><br />
+		  <label><big>8,改变索引值小于3的div元素的背景色</big></label><br />
+		  <label><big>9,改变所有的标题元素，例如h1、h2、h3...这些元素的背景色</big></label><br />
+		  <label><big>10,改变当前正在执行动画的元素的背景色</big></label><br />
+		  <label><big>11,改变当前获取焦点的元素的背景色</big></label><br />
+		 
+		
+		  
+		  <h4 >内容过滤选择器</h4>
+		  <label><big>1,改变含有文本"di"的div元素的背景色</big></label><br />
+		  <label><big>2,改变不包含子元素(包括文本元素)的div空元素的背景色</big></label><br />
+		  <label><big>3,改变含有class为mini元素的div元素背景色</big></label><br />
+		  <label><big>4,改变含有子元素(包括文本元素)的div元素的背景色</big></label><br />
+		  
+		  <h4 >可见性过滤选择器</h4>
+		  <label><big>1,改变所有可见的div元素的背景色</big></label><br />
+		  <label><big>2,显示隐藏的div元素</big></label><br />
+		  
+		  
+		   <h4>属性过滤选择器</h4>
+		  <label><big>1,改变含有属性"title"的div元素的背景色</big></label><br />
+		  <label><big>2,改变属性title值等于"test"的div元素的背景色</big></label><br />
+		  <label><big>3,改变属性title值不等于"test"的div元素的背景色</big></label><br />
+		  <label><big>4,改变属性title值以"te"开始的div元素的背景色</big></label><br /> 
+		  <label><big>5,改变属性title值以"est"结束的div元素的背景色</big></label><br />
+		  <label><big>6,改变属性title值含有"es"的div元素的背景色</big></label><br />
+		  <label><big>7,改变含有属性id，并且属性title值含有"es"的div元素的背景色</big></label><br />
+		
+		  <h4>jQuery属性选择器的过滤规则比较多，特别容易混淆。为此，把几个容易混淆的单独做了一个例子，加强印象</h4>
+	      
+	      <div title="en">title为en的div元素</div> 
+	      <div title="en-UK">title为en-UK的div元素</div>
+	       <div title="english">title为english的div元素</div>
+	        <div title="en uk">title为en uk的div元素</div>
+	       <div title="uken">title为eken的div元素</div>
+	      <br /><br/>
+		  <br /><br /><br /><br /><br /><br /><br />
+	      <label><big>1,改变属性title值以"en"开始的div元素的背景色</big></label><br />
+		  <label><big>2,改变属性title值含有"en"的div元素的背景色</big></label><br />
+		  <label><big>3,改变属性title值等于"en"或以"en"为前缀(该字符串后跟一个连字符'-')的div元素的背景色</big></label><br />
+		  <label><big>4,改变属性title用空格分隔的值中包含字符uk的元素的背景色</big></label><br /> 
+		 
+	     <h4>子元素过滤选择器</h4>
+	       <label><big>1,改变每个class为one的div父元素下的第2个子元素的背景色</big></label><br />
+	       <label><big>2,改变每个class为one的div父元素下的第1个子元素的背景色</big></label><br />
+		   <label><big>3,改变每个class为one的div父元素下的最后一个子元素的背景色</big></label><br />
+	       <label><big>4,改变每个class为one的div父元素下只有一个子元素，那么则改变这个子元素的背景色</big></label><br />
+	
+	      <h4 class="page-header">表单对象属性过滤选择器</h4>
+	
+	      <form id="form1" action="#">
+	      	可用元素:<input name="add" id="login" value="可用文本框"/><br />
+	      	不可用元素:<input name="email" value="不可用文本框" disabled="disabled"/><br />
+	      	可用元素:<input name="che" value="可用文本框"/><br />
+	      	不可用元素:<input name="name" value="不可用文本框" disabled="disabled"/><br />
+	      	多选框:<br />
+	      	<input type="checkbox" name="newsletter" value="t
+	      		est1" checked="checked"/>test1
+	      	<input type="checkbox" name="newsletter" value="test2" />test2
+	      	<input type="checkbox" name="newsletter" value="test3" />test3
+	      	<input type="checkbox" name="newsletter" value="test4" checked="checked"/>test4
+	      	<input type="checkbox" name="newsletter" value="test5" />test5<br />
+	      	下拉列表1：<br />
+	      	<select name="test" multiple="multiple" style="height: 100px;">
+	      		<option>浙江</option>
+	      		<option selected="selected">湖南</option>
+	      		<option>北京</option>
+	      		<option selected="selected">天津</option>
+	      		<option>广州</option>
+	      		<option>湖北</option>
+	      		
+	      	</select>
+	      	
+	      	下拉列表2：<br />
+	      	<select name="test">
+	      		<option>浙江</option>
+	      		<option selected="selected">湖南</option>
+	      		<option>北京</option>
+	      		<option selected="selected">天津</option>
+	      		<option>广州</option>
+	      		<option>湖北</option>
+	      		
+	      	</select>
+	      	<!--<div></div>-->
+	      </form>
+	    
+	    <br /><br />
+		  <br /><br /><br /><br /><br /><br /><br />
+	     <label><big>1,改变表单内可用input元素的值</big></label><br />
+	       <label><big>2,改变表单内不可用input元素的值</big></label><br />
+	       <label><big>3,获取多选框选中的个数</big></label><br />
+	    <label><big>4,获取下拉框选中的内容</big></label><br />
+	   
+	</body>
+</html>
