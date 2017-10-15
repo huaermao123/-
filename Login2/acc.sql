@@ -105,6 +105,7 @@ lasttime bigint  -- 最近消费
 	city varchar(20),-- 市
 	area varchar(40),-- 区/县
 	adder varchar(200)-- 详细信息
+	
 	);
 	
 	-- 订单表
